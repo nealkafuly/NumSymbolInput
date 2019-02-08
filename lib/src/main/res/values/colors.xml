@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keybord_bg">#1A1A27</color>
+    <color name="keybord_key_color_click">#9a867e7e</color>
+    <color name="keybord_key_color_click_pre">#1f1f2d</color>
+</resources>

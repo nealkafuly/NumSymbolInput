@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboard_view_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keybord_bg">
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ll_menu"
+        android:background="@color/keybord_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/selector_key_bg"
+        android:keyTextColor="#ffffff"
+        android:paddingLeft="@dimen/keyboard_view_padding_rl"
+        android:paddingRight="@dimen/keyboard_view_padding_rl"
+        android:shadowRadius="0.0"
+        android:textStyle="normal" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_menu_height"
+        android:background="@color/keybord_bg"
+        android:gravity="right"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/ll_menu_item_padding_rl"
+            android:paddingRight="@dimen/ll_menu_item_padding_rl"
+            android:text="@string/num_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ll_menu_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/ll_menu_item_padding_rl"
+            android:paddingRight="@dimen/ll_menu_item_padding_rl"
+            android:text="@string/symbol_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ll_menu_item_text_size" />
+
+        <TextView
+            android:id="@+id/tv_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/ll_menu_item_padding_rl"
+            android:text="@string/letter_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/ll_menu_item_text_size"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:background="@null"
+            android:id="@+id/hide_keyboard_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="key_height">42dp</dimen>
+    <dimen name="key_height_land">40dp</dimen>
+    <dimen name="ll_menu_height">40dp</dimen>
+    <dimen name="ll_menu_item_padding_rl">20dp</dimen>
+    <dimen name="ll_menu_item_text_size">15sp</dimen>
+    <dimen name="keyboard_view_padding_rl">8dp</dimen>
+</resources>
